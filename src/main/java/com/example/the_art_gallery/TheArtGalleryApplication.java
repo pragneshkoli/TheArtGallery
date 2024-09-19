@@ -1,6 +1,7 @@
 package com.example.the_art_gallery;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
+import com.example.the_art_gallery.logs.Logs;
 import com.example.the_art_gallery.model.AdminModel;
 import com.example.the_art_gallery.model.UserModel;
 import com.example.the_art_gallery.repository.AdminRepository;
@@ -24,7 +25,7 @@ public class TheArtGalleryApplication {
     Logger logger = Logger.getLogger(TheArtGalleryApplication.class.getName());
     private final AdminRepository adminRepository;
     private final UserRepository userRepository;
-
+    static Logs logs = new Logs(TheArtGalleryApplication.class.getName());
     public TheArtGalleryApplication(AdminRepository adminRepository, UserRepository userRepository) {
         this.adminRepository = adminRepository;
         this.userRepository = userRepository;
@@ -33,13 +34,14 @@ public class TheArtGalleryApplication {
     public static void main(String[] args) {
         SpringApplication.run(TheArtGalleryApplication.class, args);
         Logger logger = Logger.getLogger(TheArtGalleryApplication.class.getName());
+
+        logs.log("Server started, listening on port " + Config.PORT,"main");
         logger.info("Server started, listening on port " + Config.PORT);
     }
 
     @GetMapping()
     public Map<String, Object> root() {
         return new HashMap<>() {
-
             {
                 put("message", "Chhim Tapak Dam Dam");
             }

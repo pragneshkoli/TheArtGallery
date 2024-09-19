@@ -10,6 +10,6 @@ public class Config {
     public static String ADMIN_NAME = dotenv.get("ADMIN_NAME");
     public static String ADMIN_PASSWORD = dotenv.get("ADMIN_PASSWORD");
     public static String PHONE = dotenv.get("PHONE");
-    public  static  String ADMIN_ROUTE = dotenv.get("ADMIN_ROUTE");
-    public  static  String USER_ROUTE = dotenv.get("USER_ROUTE");
+    public static String ADMIN_ROUTE = dotenv.get("ADMIN_ROUTE");
+    public static String USER_ROUTE = dotenv.get("USER_ROUTE");
 }

@@ -1,0 +1,53 @@
+2024-09-02T11:11:17.472684	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T11:12:07.086817	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T11:13:00.150697	com.example.the_art_gallery.service.AdminService.changePassword:
+Invalid old password
+
+2024-09-02T11:13:47.084576	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T11:17:29.205495	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T11:19:19.748474	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T11:43:09.596487	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T11:43:11.689971	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T14:29:19.918336	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T14:29:21.632199	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T14:56:19.661954	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T14:56:21.960518	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T15:33:09.626672	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T15:34:16.157631	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T15:34:38.430446	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T15:35:37.660264	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
+
+2024-09-02T15:35:59.167784	com.example.the_art_gallery.controller.JWT.verifyJWTToken:
+Invalid token
+
+2024-09-02T15:58:19.889798	com.example.the_art_gallery.TheArtGalleryApplication.main:
+Server started, listening on port 3333
