@@ -10,8 +10,11 @@ import com.example.the_art_gallery.utils.Config;
 import jakarta.annotation.PostConstruct;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -39,6 +42,21 @@ public class TheArtGalleryApplication {
         logger.info("Server started, listening on port " + Config.PORT);
     }
 
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**")
+                        .allowedOrigins("*")
+                        .allowedMethods("GET", "POST", "PUT", "DELETE")
+                        .allowedHeaders("*")
+                        .allowCredentials(false);  // Note: allowCredentials(true) can't be used with allowedOrigins("*")
+
+            }
+        };
+    }
+
     @GetMapping()
     public Map<String, Object> root() {
         return new HashMap<>() {
@@ -47,6 +65,7 @@ public class TheArtGalleryApplication {
             }
         };
     }
+
 
     @PostConstruct // Executed after Spring context initialization
     public void createAdminIfNotExists() {

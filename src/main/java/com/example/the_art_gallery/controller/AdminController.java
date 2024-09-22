@@ -22,7 +22,7 @@ import java.util.Map;
 import java.util.logging.Logger;
 
 import static com.example.the_art_gallery.routes.AdminRoutes.ADMIN;
-
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(ADMIN)
 public class AdminController extends JWT {
